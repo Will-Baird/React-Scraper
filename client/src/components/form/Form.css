@@ -5,12 +5,12 @@
 }
 
 .card-header {
-    background-color: #2E5894;
-    color: #ffffff;
+    background-color: navy;
+    color: whitesmoke;
 }
 
 #submit, #clear {
-    background-color: #2E5894;
+    background-color: navy;
     border: none;
 }
 

@@ -18,10 +18,8 @@ class Form extends Component {
     }
 
     handleInputChange = event => {
-        // Getting the value and name of the input which triggered the change
         const { name, value } = event.target;
     
-        // Updating the input's state
         this.setState({
           [name]: value
         });
@@ -51,7 +49,7 @@ class Form extends Component {
                 <br></br>
                 <div className="card">
                     <div className="card-header">
-                    <i className="fas fa-clipboard-list"></i> Search Parameters
+                    <i className="fas fa-clipboard-list"></i> Search Options
                     </div>
                     <div className="card-body">
                         <form>
@@ -60,7 +58,7 @@ class Form extends Component {
                                 <input type="text" className="form-control" name="search" onChange={this.handleInputChange} placeholder="Sports"></input>
                             </div>
                             <div className="form-group">
-                                <label>Number Of Records:</label>
+                                <label>Number Of Articles:</label>
                                 <select className="form-control" name="records" onChange={this.handleInputChange}>
                                     <option>1</option>
                                     <option>5</option>
@@ -68,11 +66,11 @@ class Form extends Component {
                                 </select>
                             </div>
                             <div className="form-group">
-                                <label>Start Year (Optional):</label>
+                                <label>Beginning Date:</label>
                                 <input type="number" className="form-control" name="start" onChange={this.handleInputChange} placeholder="YYYYMMDD"></input>
                             </div>
                             <div className="form-group">
-                                <label>End Year (Optional):</label>
+                                <label>Ending Date:</label>
                                 <input type="number" className="form-control" name="end" onChange={this.handleInputChange} placeholder="YYYYMMDD"></input>
                             </div>
                             <button type="submit" className="btn btn-primary" id="submit" onClick={this.searchForm}><i className="fas fa-search"></i> Search</button>

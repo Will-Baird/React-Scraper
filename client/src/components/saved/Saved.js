@@ -35,7 +35,7 @@ class Saved extends Component {
                         <div>
                             {this.state.results.map(function(result, index) {
                                 return (<div className="main" key={index++}><hr></hr><h1 className="savedTitle">{result.title}</h1>
-                                    <a href={result.url} target="_blank">Check More!</a>
+                                    <a href={result.url} target="_blank">Look for more?</a>
                                     <button className="remove" onClick={() => axios.get("/api/saved/" + result._id).then(res => {
                                                                                 console.log(res);
                                                                                 window.location.reload();
