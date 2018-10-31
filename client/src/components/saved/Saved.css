@@ -1,0 +1,17 @@
+.main {
+    margin-top: 10px; 
+}
+
+.savedTitle {
+    margin: 0 auto;
+}
+
+.remove {
+    float: right;
+    border: none;
+    background-color: #2E5894;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 0 auto;
+}

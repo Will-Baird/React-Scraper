@@ -1,0 +1,20 @@
+.add {
+    float: right;
+    border: none;
+    background-color: #2E5894;
+    color: #ffffff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-left: 12px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.add:active {
+    background-color: rgb(35, 66, 109);
+}
+
+h1 {
+    font-size: 25px;
+}
